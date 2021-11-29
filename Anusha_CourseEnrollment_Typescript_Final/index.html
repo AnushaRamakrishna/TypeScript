@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="maindiv">
+        <h1>Home</h1>
+        <button type="button" id ="userreg" onclick="UserRegistration()">User Registration</button>
+        <button type="button" id ="loginbtn" onclick="LoginUser()">LoginUser</button>
+      
+    </div>
+
+    <div id="registration">
+        <h1>Registration Details</h1>
+        <label>Username</label>
+        <input type="text" id="name"><br>
+        <label>Age</label>
+        <input type="text" id="age"><br>
+        <label>Phonenumber</label>
+        <input type="text" id="phonenumber"><br>
+        <button type="button" id="add" onclick="AddUserDetails()">Add</button>
+        
+    </div>
+    <div id="login">
+        <h1>Login Details</h1>
+        <label>UserId</label>
+        <input type="text" id="userid">
+        <button type="button" id="logged" onclick="Login()">Login</button><br>
+        <label id="enrolledusers"></label>
+    </div>
+    <div id="course">
+        <h1>Course</h1>
+        <button type="button" id="available" onclick="AvailableCourses()">AvailableCourses</button>
+        <button type="button" id="enrolled" onclick="EnrolledCourse()">EnrolledCourses</button>
+    </div>
+    <div id="enroll">
+        <h1>Course Enrollment</h1>
+        <select id="coursename" onselect="click()">
+            <option id="html">HTML</option>
+            <option id="css" >CSS</option>
+            <option id="js">JavaScript</option>
+            <option id="csharp">C#</option>
+        </select><br>
+        <label>Enter the number of days you require to complete the course: </label>
+        <input type="number" id="days"><br>
+        <button type="button" id="enrolling" onclick="Enroll()">Enroll</button>
+
+    </div>
+    <div id="enrolledcourse">
+        <h1>Enrollment list</h1>
+        <label id="details"></label>
+        <label id="data"></label>
+    </div>
+    <script src="script/course.js"></script>
+</body>
+</html>
